@@ -1,0 +1,4 @@
+../Core/Src/SistemYapilandirici.cpp:17:2:SistemYapilandirici::SistemYapilandirici()	1
+../Core/Src/SistemYapilandirici.cpp:28:2:SistemYapilandirici::~SistemYapilandirici()	1
+../Core/Src/SistemYapilandirici.cpp:35:6:void SistemYapilandirici::Instance()	1
+../Core/Src/SistemYapilandirici.cpp:44:6:void SistemYapilandirici::islevBaslat()	1

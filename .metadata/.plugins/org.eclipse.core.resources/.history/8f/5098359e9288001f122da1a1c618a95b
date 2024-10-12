@@ -1,0 +1,18 @@
+/*
+ * GKA.cpp
+ *
+ *  Created on: Oct 12, 2024
+ *      Author: m_yas
+ */
+
+#include <GKA.h>
+
+GKA::GKA() {
+	// TODO Auto-generated constructor stub
+
+}
+
+GKA::~GKA() {
+	// TODO Auto-generated destructor stub
+}
+

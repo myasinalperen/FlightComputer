@@ -1,0 +1,35 @@
+/*
+ * SistemYapilandirici.cpp
+ *
+ *  Created on: Oct 12, 2024
+ *      Author: m_yas
+ */
+
+#include "../Core/Inc/SistemYapilandirici.h"  // Gerçek yola göre ayarlayın
+/**
+ * @brief SistemYapilandirici constructor
+ */
+
+void SistemYapilandirici::SistemYapilandirici()
+{
+	islevBaslat();
+
+	}
+
+
+
+/**
+ * @brief SistemYapilandirici deconstructor
+ */
+void ~SistemYapilandirici::SistemYapilandirici()
+{
+	}
+
+/**
+ * @brief Sistemde olan tasklari baslatir
+ */
+void islevBaslat()
+{
+
+
+	}

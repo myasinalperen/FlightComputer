@@ -1,0 +1,26 @@
+/*
+ * NAV.cpp
+ *
+ *  Created on: Oct 12, 2024
+ *      Author: m_yas
+ */
+
+#include "NAV.h"
+
+NAV::NAV() {
+	// TODO Auto-generated constructor stub
+
+}
+
+NAV::~NAV() {
+	// TODO Auto-generated destructor stub
+}
+
+static void NAV::vNAVtask(void const* argument)
+{
+	while(1)
+	{
+
+	}
+
+}

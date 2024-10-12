@@ -1,0 +1,4 @@
+../Core/Src/NAV.cpp:10:1:NAV::NAV()	16	static
+../Core/Src/NAV.cpp:15:1:NAV::~NAV()	16	static
+../Core/Src/NAV.cpp:15:1:virtual NAV::~NAV()	16	static
+../Core/Src/NAV.cpp:19:7:static void NAV::vNAVtask(const void*)	16	static

@@ -1,0 +1,4 @@
+../Core/Src/GPS.cpp:10:1:GPS::GPS()	16	static
+../Core/Src/GPS.cpp:15:1:GPS::~GPS()	16	static
+../Core/Src/GPS.cpp:15:1:virtual GPS::~GPS()	16	static
+../Core/Src/GPS.cpp:19:7:static void GPS::vGPStask(const void*)	16	static
