@@ -1,0 +1,10 @@
+20:51:37 **** Incremental Build of configuration Debug for project tempFlight ****
+make -j12 all 
+arm-none-eabi-size  tempFlight.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36444	    292	  19988	  56724	   dd94	tempFlight.elf
+Finished building: default.size.stdout
+ 
+
+20:51:38 Build Finished. 0 errors, 0 warnings. (took 406ms)
+

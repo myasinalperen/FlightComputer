@@ -1,0 +1,26 @@
+/*
+ * IMU.cpp
+ *
+ *  Created on: Oct 12, 2024
+ *      Author: m_yas
+ */
+
+#include "IMU.h"
+
+IMU::IMU() {
+	// TODO Auto-generated constructor stub
+
+}
+
+IMU::~IMU() {
+	// TODO Auto-generated destructor stub
+}
+
+void IMU::vIMUtask(void const* argument)
+{
+	while(1)
+	{
+
+
+	}
+}

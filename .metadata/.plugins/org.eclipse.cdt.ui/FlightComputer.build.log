@@ -1,10 +1,10 @@
-19:43:34 **** Incremental Build of configuration Debug for project FlightComputer ****
+12:22:34 **** Incremental Build of configuration Debug for project FlightComputer ****
 make -j12 all 
 arm-none-eabi-size  FlightComputer.elf 
    text	   data	    bss	    dec	    hex	filename
-  36444	    292	  19988	  56724	   dd94	FlightComputer.elf
+  37084	    292	  19988	  57364	   e014	FlightComputer.elf
 Finished building: default.size.stdout
  
 
-19:43:35 Build Finished. 0 errors, 0 warnings. (took 404ms)
+12:22:34 Build Finished. 0 errors, 0 warnings. (took 415ms)
 

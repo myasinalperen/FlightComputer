@@ -18,8 +18,10 @@ IMU::~IMU() {
 
 void IMU::vIMUtask(void const* argument)
 {
+
 	while(1)
 	{
-		//HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin,GPIO_PIN_SET);
+
 	}
 }

@@ -11,6 +11,8 @@
 #include "main.h"
 #include "stm32h7xx_hal.h"
 #include "cmsis_os.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 #include <GPS.h>
 #include <IMU.h>
@@ -24,6 +26,7 @@ public:
 
 	SistemYapilandirici();
 ~SistemYapilandirici();
+void IMUtask();
 
 private:
 

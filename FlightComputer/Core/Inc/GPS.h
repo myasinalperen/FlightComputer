@@ -8,8 +8,11 @@
 #ifndef SRC_GPS_H_
 #define SRC_GPS_H_
 
-#include "stm32h7xx_hal.h"
 #include "main.h"
+#include "stm32h7xx_hal.h"
+#include "cmsis_os.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 class GPS {
 public:

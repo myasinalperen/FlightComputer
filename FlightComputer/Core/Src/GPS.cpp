@@ -18,6 +18,7 @@ GPS::~GPS() {
 
  void GPS::vGPStask(void const* argument)
 {
+
     while (1) {
 
 		HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin,GPIO_PIN_SET);
