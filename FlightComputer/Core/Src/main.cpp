@@ -25,6 +25,8 @@
 /* USER CODE BEGIN Includes */
 #include "SistemYapilandirici.h"
 #include "GPS.h"
+#include "LOG.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -64,7 +66,7 @@ ETH_TxPacketConfig TxConfig;
 
 ETH_HandleTypeDef heth;
 
-UART_HandleTypeDef huart3;
+UART_HandleTypeDef huart2;
 
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
@@ -79,7 +81,7 @@ osSemaphoreId BinSemHandle;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ETH_Init(void);
-static void MX_USART3_UART_Init(void);
+static void MX_USART2_UART_Init(void);
 static void MX_USB_OTG_FS_PCD_Init(void);
 void StartDefaultTask(void const * argument);
 
@@ -123,7 +125,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ETH_Init();
-  MX_USART3_UART_Init();
+  MX_USART2_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
 
@@ -152,7 +154,7 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 1024);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
 
@@ -291,7 +293,7 @@ static void MX_ETH_Init(void)
   * @param None
   * @retval None
   */
-static void MX_USART3_UART_Init(void)
+static void MX_USART2_UART_Init(void)
 {
 
   /* USER CODE BEGIN USART3_Init 0 */
@@ -301,33 +303,34 @@ static void MX_USART3_UART_Init(void)
   /* USER CODE BEGIN USART3_Init 1 */
 
   /* USER CODE END USART3_Init 1 */
-  huart3.Instance = USART3;
-  huart3.Init.BaudRate = 115200;
-  huart3.Init.WordLength = UART_WORDLENGTH_8B;
-  huart3.Init.StopBits = UART_STOPBITS_1;
-  huart3.Init.Parity = UART_PARITY_NONE;
-  huart3.Init.Mode = UART_MODE_TX_RX;
-  huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart3.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart3.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart3.Init.ClockPrescaler = UART_PRESCALER_DIV1;
-  huart3.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetTxFifoThreshold(&huart3, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetRxFifoThreshold(&huart3, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_DisableFifoMode(&huart3) != HAL_OK)
-  {
-    Error_Handler();
-  }
+	  huart2.Instance = USART2;
+	  huart2.Init.BaudRate = 9600;
+	  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+	  huart2.Init.StopBits = UART_STOPBITS_1;
+	  huart2.Init.Parity = UART_PARITY_NONE;
+	  huart2.Init.Mode = UART_MODE_TX_RX;
+	  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+	  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+	  huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+	  huart2.Init.ClockPrescaler = UART_PRESCALER_DIV1;
+	  huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+	  if (HAL_UART_Init(&huart2) != HAL_OK)
+	  {
+	    Error_Handler();
+	  }
+	  if (HAL_UARTEx_SetTxFifoThreshold(&huart2, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+	  {
+	    Error_Handler();
+	  }
+	  if (HAL_UARTEx_SetRxFifoThreshold(&huart2, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+	  {
+	    Error_Handler();
+	  }
+	  if (HAL_UARTEx_DisableFifoMode(&huart2) != HAL_OK)
+	  {
+	    Error_Handler();
+	  }
+
   /* USER CODE BEGIN USART3_Init 2 */
 
   /* USER CODE END USART3_Init 2 */
@@ -438,6 +441,42 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+/*
+void send_message(const char *format, ...)
+{
+    char message[200]; // Mesajı tutacak dizi
+    char timestamp[50]; // Tarih ve saat bilgisi için dizi
+    va_list args; // Değişken argümanlar için
+
+    // RTC kullanarak tarih ve saat bilgisini alalım
+    RTC_TimeTypeDef sTime;
+    RTC_DateTypeDef sDate;
+
+    HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
+    HAL_RTC_GetDate(&hrtc, &sDate, RTC_FORMAT_BIN);
+
+    // Tarih ve saat bilgisini formatlayalım
+    snprintf(timestamp, sizeof(timestamp), "%02d-%02d-%02d %02d:%02d:%02d: ",
+             sDate.Year + 2000, sDate.Month, sDate.Date,
+             sTime.Hours, sTime.Minutes, sTime.Seconds);
+
+    va_start(args, format); // Argüman listesini başlat
+
+    // Mesajı formatlayın
+    vsnprintf(message, sizeof(message), format, args);
+
+    va_end(args); // Argüman listesini sonlandır
+
+    // Tarih ve saat bilgisi ile mesajı birleştir
+    strcat(timestamp, message);
+
+    // Mesajı UART üzerinden gönderin
+    if (HAL_UART_Transmit(&huart2, (uint8_t *)timestamp, strlen(timestamp), 1000) != HAL_OK)
+    {
+        // Hata durumu yönetimi
+    }
+}
+*/
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -451,10 +490,14 @@ void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
-	HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin,GPIO_PIN_SET);
-	osDelay(1000);
-	SistemYapilandirici();
-	HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin,GPIO_PIN_RESET);
+
+
+
+	LOGu("Sistem Yapilandirici Basliyor\n");
+	SistemYapilandirici *p_SistemYapilandirici = new SistemYapilandirici();
+
+
+
   /* USER CODE END 5 */
 }
 

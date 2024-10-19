@@ -21,7 +21,7 @@ GPS::~GPS() {
 
     while (1) {
 
-		HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin,GPIO_PIN_SET);
+		//HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin,GPIO_PIN_SET);
         // Task code goes here
     }
 }

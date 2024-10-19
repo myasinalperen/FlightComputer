@@ -1,0 +1,18 @@
+/*
+ * LOG.cpp
+ *
+ *  Created on: Oct 19, 2024
+ *      Author: m_yas
+ */
+
+#include "LOG.h"
+
+LOG::LOG() {
+	// TODO Auto-generated constructor stub
+
+}
+
+LOG::~LOG() {
+	// TODO Auto-generated destructor stub
+}
+

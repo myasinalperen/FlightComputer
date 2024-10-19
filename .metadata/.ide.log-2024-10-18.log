@@ -1,0 +1,102 @@
+2024-10-19 12:04:45,442 [INFO] WebApp:189 - Connection lost
+2024-10-19 12:04:45,870 [INFO] WebApp:186 - Connection restablished
+2024-10-19 12:04:47,549 [INFO] WebApp:189 - Connection lost
+2024-10-19 12:04:47,703 [INFO] WebApp:186 - Connection restablished
+2024-10-19 12:59:43,473 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,509x152,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-19 13:06:07,843 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:07,845 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:07,849 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:07,854 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:16,150 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:16,151 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:16,156 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:16,160 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:16,461 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:16,462 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:06:16,467 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:13:04,577 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 459971304 Bytes (1073741824)
+2024-10-19 13:13:24,666 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 356443760 Bytes (1073741824)
+2024-10-19 13:13:24,903 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 485942848 Bytes (1073741824)
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: MEMORYMAP
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USB_OTG_FS
+2024-10-19 13:13:25,417 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-10-19 13:13:25,418 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-10-19 13:13:25,420 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-10-19 13:13:25,662 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\license.tmp_save
+2024-10-19 13:13:26,094 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\license.tmp
+2024-10-19 13:13:26,228 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\gpio.tmp_save
+2024-10-19 13:13:26,366 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\gpio.tmp
+2024-10-19 13:13:26,675 [WARN] IPConfigManager:98 - WARNING: Missing Config File for MEMORYMAP ip!!
+2024-10-19 13:13:26,676 [WARN] IP:2191 - DefaultDataRegion not found: check if there is a RefParameter without a condition.
+2024-10-19 13:13:26,676 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:13:26,676 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:13:26,676 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:13:26,676 [ERROR] HwResourcesManager:1531 - Cannot find MPC for the given IP: FLASH
+2024-10-19 13:13:27,126 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-19 13:13:27,138 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_inc.tmp_save
+2024-10-19 13:13:27,219 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_inc.tmp
+2024-10-19 13:13:27,230 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_vars.tmp_save
+2024-10-19 13:13:27,301 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_vars.tmp
+2024-10-19 13:13:27,313 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_pfp.tmp_save
+2024-10-19 13:13:27,387 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_pfp.tmp
+2024-10-19 13:13:27,397 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-10-19 13:13:27,477 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_obj_creat.tmp
+2024-10-19 13:13:27,486 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-10-19 13:13:27,550 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_kernelStart.tmp
+2024-10-19 13:13:27,561 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_default_thread.tmp_save
+2024-10-19 13:13:27,642 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_default_thread.tmp
+2024-10-19 13:13:27,653 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_threads.tmp_save
+2024-10-19 13:13:27,717 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_threads.tmp
+2024-10-19 13:13:27,733 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-19 13:13:27,741 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_inc.tmp_save
+2024-10-19 13:13:27,802 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_inc.tmp
+2024-10-19 13:13:27,807 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_vars.tmp_save
+2024-10-19 13:13:27,855 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_vars.tmp
+2024-10-19 13:13:27,860 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_pfp.tmp_save
+2024-10-19 13:13:27,905 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_pfp.tmp
+2024-10-19 13:13:27,915 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-10-19 13:13:27,963 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_obj_creat.tmp
+2024-10-19 13:13:27,969 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-10-19 13:13:28,016 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_kernelStart.tmp
+2024-10-19 13:13:28,022 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_default_thread.tmp_save
+2024-10-19 13:13:28,069 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_default_thread.tmp
+2024-10-19 13:13:28,074 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_threads.tmp_save
+2024-10-19 13:13:28,121 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\rtos_threads.tmp
+2024-10-19 13:13:28,141 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\FreeRTOSConfig.h_save
+2024-10-19 13:13:28,218 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\FreeRTOSConfig.h
+2024-10-19 13:13:28,237 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\freertos.c_save
+2024-10-19 13:13:28,306 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\freertos.c
+2024-10-19 13:13:28,322 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\cortex.tmp_save
+2024-10-19 13:13:28,394 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\cortex.tmp
+2024-10-19 13:13:28,424 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\stm32h7xx_it.c_save
+2024-10-19 13:13:28,508 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\stm32h7xx_it.c
+2024-10-19 13:13:28,526 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\stm32h7xx_it.h_save
+2024-10-19 13:13:28,591 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\stm32h7xx_it.h
+2024-10-19 13:13:28,775 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\stm32h7xx_hal_msp.c_save
+2024-10-19 13:13:28,940 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\stm32h7xx_hal_msp.c
+2024-10-19 13:13:28,966 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\system.tmp_save
+2024-10-19 13:13:29,033 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\MXTmpFiles\system.tmp
+2024-10-19 13:13:29,050 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\stm32h7xx_hal_timebase_tim.c_save
+2024-10-19 13:13:29,117 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\stm32h7xx_hal_timebase_tim.c
+2024-10-19 13:13:29,140 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\stm32h7xx_hal_conf.h_save
+2024-10-19 13:13:29,210 [INFO] CodeEngine:335 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\stm32h7xx_hal_conf.h
+2024-10-19 13:13:29,263 [WARN] IPConfigManager:3554 - IP not found : USB_OTG
+2024-10-19 13:13:29,265 [WARN] CodeGenerator:4002 - IP not found : null
+2024-10-19 13:13:29,286 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\main.h_save
+2024-10-19 13:13:29,369 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Inc\main.h
+2024-10-19 13:13:29,380 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\main.c_save
+2024-10-19 13:13:29,522 [INFO] CodeEngine:279 - Generated code: C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\Core\Src\main.c
+2024-10-19 13:13:30,000 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 277mS.
+2024-10-19 13:13:30,008 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-10-19 13:13:30,086 [INFO] ConfigFileManager:1531 - The Die is : DIE450
+2024-10-19 13:13:30,097 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-10-19 13:13:30,106 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-10-19 13:13:30,118 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2024-10-19 13:13:30,131 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-10-19 13:13:30,145 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-10-19 13:13:30,155 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST

@@ -26,7 +26,6 @@ public:
 
 	SistemYapilandirici();
 ~SistemYapilandirici();
-void IMUtask();
 
 private:
 

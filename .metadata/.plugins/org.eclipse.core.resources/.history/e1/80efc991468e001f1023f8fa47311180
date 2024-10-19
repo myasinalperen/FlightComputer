@@ -1,0 +1,37 @@
+/*
+ * LOG.cpp
+ *
+ *  Created on: Oct 19, 2024
+ *      Author: m_yas
+ */
+
+#include "LOG.h"
+
+LOG::LOG() {
+	// TODO Auto-generated constructor stub
+
+}
+
+LOG::~LOG() {
+	// TODO Auto-generated destructor stub
+}
+
+void LOG::LOG(const char *format, ...)
+{
+    char message[100]; // Mesajı tutacak bir dizi
+    va_list args; // Değişken argümanlar için
+    va_start(args, format); // Argüman listesini başlat
+
+    // Mesajı formatlayın
+    vsnprintf(message, sizeof(message), format, args);
+
+    va_end(args); // Argüman listesini sonlandır
+
+    // Mesajı UART üzerinden gönderin
+    if (HAL_UART_Transmit(&huart2, (uint8_t *)message, strlen(message), 1000) != HAL_OK)
+    {
+        // Hata durumu yönetimi
+    }
+}
+
+

@@ -1,6 +1,7 @@
 "./Core/Src/GKA.o"
 "./Core/Src/GPS.o"
 "./Core/Src/IMU.o"
+"./Core/Src/LOG.o"
 "./Core/Src/NAV.o"
 "./Core/Src/SistemYapilandirici.o"
 "./Core/Src/freertos.o"

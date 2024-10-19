@@ -5,11 +5,12 @@
  *      Author: m_yas
  */
 
-#define taskSize  ( ( size_t ) ( 1 * 512 ) )  // Örneğin 1KB heap
+#define taskSize  ( ( size_t ) ( 1 * 1024 ) )  // Örneğin 1KB heap
 
 
 #include <SistemYapilandirici.h>
-
+#include "IMU.h"
+#include "LOG.h"
 /**
  * @brief SistemYapilandirici constructor
  */
@@ -36,6 +37,7 @@ void SistemYapilandirici::Instance()
  {
 	  GPS m_GPS;
 	  NAV m_NAV;
+
  	}
 
 /**
@@ -43,7 +45,6 @@ void SistemYapilandirici::Instance()
  */
 void SistemYapilandirici::islevBaslat()
 {
-	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,GPIO_PIN_SET);
 
 
     /* definition and creation of IMUtask */
@@ -58,10 +59,11 @@ void SistemYapilandirici::islevBaslat()
     }
     else
     {
+    	LOGu("IMUtask olusturuldu \n");
 
     }
 
-
+#if 0
 	  /* definition and creation of GPStask */
 		osThreadId GPStaskHandle;
 	  osThreadDef(GPStask, GPS::vGPStask, osPriorityNormal, 0, taskSize);
@@ -107,7 +109,7 @@ void SistemYapilandirici::islevBaslat()
 	    {
 
 	    }
-
+#endif
 	    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,GPIO_PIN_RESET);
 
 

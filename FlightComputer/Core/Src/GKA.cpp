@@ -20,7 +20,7 @@ void GKA::vGKAtask(void const* argument)
 {
    while (1) {
 
-	/*	HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin,GPIO_PIN_SET);*/
+		//HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,GPIO_PIN_SET);
        // Task code goes here
    }
 }

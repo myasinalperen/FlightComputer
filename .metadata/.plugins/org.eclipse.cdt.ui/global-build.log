@@ -1,29 +1,116 @@
-15:14:15 **** Incremental Build of configuration Debug for project RMII ****
+21:27:12 **** Incremental Build of configuration Debug for project FlightComputer ****
 make -j12 all 
-arm-none-eabi-gcc "../LWIP/Target/ethernetif.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LWIP/Target/ethernetif.d" -MT"LWIP/Target/ethernetif.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "LWIP/Target/ethernetif.o"
-arm-none-eabi-gcc -o "RMII.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\RMII\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RMII.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe:C:\Users\m_yas\STM32CubeIDE\FlightComputer\RMII\STM32H743ZITX_FLASH.ld:179: syntax error
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:74: RMII.elf] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-15:19:21 **** Incremental Build of configuration Debug for project RMII ****
-make -j12 all 
-arm-none-eabi-gcc -o "RMII.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\RMII\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RMII.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe:C:\Users\m_yas\STM32CubeIDE\FlightComputer\RMII\STM32H743ZITX_FLASH.ld:180: syntax error
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:74: RMII.elf] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-15:22:44 **** Incremental Build of configuration Debug for project RMII ****
-make -j12 all 
-arm-none-eabi-gcc "../LWIP/Target/ethernetif.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LWIP/Target/ethernetif.d" -MT"LWIP/Target/ethernetif.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "LWIP/Target/ethernetif.o"
-arm-none-eabi-gcc -o "RMII.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\RMII\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RMII.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: RMII.elf
+arm-none-eabi-g++ "../Core/Src/SistemYapilandirici.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/SistemYapilandirici.d" -MT"Core/Src/SistemYapilandirici.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/SistemYapilandirici.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/SistemYapilandirici.h:13,
+                 from ../Core/Src/SistemYapilandirici.cpp:11:
+../Core/Src/SistemYapilandirici.cpp: In member function 'void SistemYapilandirici::islevBaslat()':
+../Core/Src/SistemYapilandirici.cpp:53:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   53 |     osThreadDef(IMUtask, IMU::vIMUtask, osPriorityNormal, 0, taskSize);
+      |                                                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
+  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
+      |    ^~~~
+In file included from ../Core/Src/main.cpp:22:
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:157:71: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  157 |   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 1024);
+      |                                                                       ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
+  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
+      |    ^~~~
+../Core/Src/main.cpp: In function 'void StartDefaultTask(const void*)':
+../Core/Src/main.cpp:499:30: warning: unused variable 'p_SistemYapilandirici' [-Wunused-variable]
+  499 |         SistemYapilandirici *p_SistemYapilandirici = new SistemYapilandirici();
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
  
-arm-none-eabi-size  RMII.elf 
-arm-none-eabi-objdump -h -S RMII.elf  > "RMII.list"
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
    text	   data	    bss	    dec	    hex	filename
-  73000	  19151	  14664	 106815	  1a13f	RMII.elf
+  37628	    292	  20004	  57924	   e244	FlightComputer.elf
 Finished building: default.size.stdout
  
-Finished building: RMII.list
+Finished building: FlightComputer.list
+ 
+21:29:14 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/SistemYapilandirici.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/SistemYapilandirici.d" -MT"Core/Src/SistemYapilandirici.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/SistemYapilandirici.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/SistemYapilandirici.h:13,
+                 from ../Core/Src/SistemYapilandirici.cpp:11:
+../Core/Src/SistemYapilandirici.cpp: In member function 'void SistemYapilandirici::islevBaslat()':
+../Core/Src/SistemYapilandirici.cpp:52:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   52 |     osThreadDef(IMUtask, IMU::vIMUtask, osPriorityNormal, 0, taskSize);
+      |                                                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
+  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
+      |    ^~~~
+../Core/Src/SistemYapilandirici.cpp:62:9: error: 'LOGu' was not declared in this scope
+   62 |         LOGu("IMUtask olusturuldu \n");
+      |         ^~~~
+make: *** [Core/Src/subdir.mk:62: Core/Src/SistemYapilandirici.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.cpp:22:
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:157:71: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  157 |   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 1024);
+      |                                                                       ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
+  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
+      |    ^~~~
+../Core/Src/main.cpp: In function 'void StartDefaultTask(const void*)':
+../Core/Src/main.cpp:499:30: warning: unused variable 'p_SistemYapilandirici' [-Wunused-variable]
+  499 |         SistemYapilandirici *p_SistemYapilandirici = new SistemYapilandirici();
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:29:55 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/SistemYapilandirici.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/SistemYapilandirici.d" -MT"Core/Src/SistemYapilandirici.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/SistemYapilandirici.o"
+In file included from ../Core/Inc/SistemYapilandirici.h:13,
+                 from ../Core/Src/SistemYapilandirici.cpp:11:
+../Core/Src/SistemYapilandirici.cpp: In member function 'void SistemYapilandirici::islevBaslat()':
+../Core/Src/SistemYapilandirici.cpp:52:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   52 |     osThreadDef(IMUtask, IMU::vIMUtask, osPriorityNormal, 0, taskSize);
+      |                                                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
+  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
+      |    ^~~~
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  40040	    292	  20004	  60336	   ebb0	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+21:30:31 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.cpp:22:
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:157:71: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  157 |   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 1024);
+      |                                                                       ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
+  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
+      |    ^~~~
+../Core/Src/main.cpp: In function 'void StartDefaultTask(const void*)':
+../Core/Src/main.cpp:497:30: warning: unused variable 'p_SistemYapilandirici' [-Wunused-variable]
+  497 |         SistemYapilandirici *p_SistemYapilandirici = new SistemYapilandirici();
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  40040	    292	  20004	  60336	   ebb0	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
  
