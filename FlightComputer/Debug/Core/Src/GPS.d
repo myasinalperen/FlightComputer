@@ -52,7 +52,9 @@ Core/Src/GPS.o: ../Core/Src/GPS.cpp ../Core/Inc/GPS.h ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+ ../Core/Inc/LOG.h ../Core/Inc/SistemYapilandirici.h ../Core/Inc/IMU.h \
+ ../Core/Inc/NAV.h
 ../Core/Inc/GPS.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -109,3 +111,7 @@ Core/Src/GPS.o: ../Core/Src/GPS.cpp ../Core/Inc/GPS.h ../Core/Inc/main.h \
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+../Core/Inc/LOG.h:
+../Core/Inc/SistemYapilandirici.h:
+../Core/Inc/IMU.h:
+../Core/Inc/NAV.h:

@@ -1,4 +1,3 @@
-"./Core/Src/GKA.o"
 "./Core/Src/GPS.o"
 "./Core/Src/IMU.o"
 "./Core/Src/LOG.o"

@@ -5,7 +5,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Core/Src/GKA.cpp \
 ../Core/Src/GPS.cpp \
 ../Core/Src/IMU.cpp \
 ../Core/Src/LOG.cpp \
@@ -32,7 +31,6 @@ C_DEPS += \
 ./Core/Src/system_stm32h7xx.d 
 
 OBJS += \
-./Core/Src/GKA.o \
 ./Core/Src/GPS.o \
 ./Core/Src/IMU.o \
 ./Core/Src/LOG.o \
@@ -48,7 +46,6 @@ OBJS += \
 ./Core/Src/system_stm32h7xx.o 
 
 CPP_DEPS += \
-./Core/Src/GKA.d \
 ./Core/Src/GPS.d \
 ./Core/Src/IMU.d \
 ./Core/Src/LOG.d \
@@ -66,7 +63,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/GKA.cyclo ./Core/Src/GKA.d ./Core/Src/GKA.o ./Core/Src/GKA.su ./Core/Src/GPS.cyclo ./Core/Src/GPS.d ./Core/Src/GPS.o ./Core/Src/GPS.su ./Core/Src/IMU.cyclo ./Core/Src/IMU.d ./Core/Src/IMU.o ./Core/Src/IMU.su ./Core/Src/LOG.cyclo ./Core/Src/LOG.d ./Core/Src/LOG.o ./Core/Src/LOG.su ./Core/Src/NAV.cyclo ./Core/Src/NAV.d ./Core/Src/NAV.o ./Core/Src/NAV.su ./Core/Src/SistemYapilandirici.cyclo ./Core/Src/SistemYapilandirici.d ./Core/Src/SistemYapilandirici.o ./Core/Src/SistemYapilandirici.su ./Core/Src/freertos.cyclo ./Core/Src/freertos.d ./Core/Src/freertos.o ./Core/Src/freertos.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.cyclo ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_hal_timebase_tim.cyclo ./Core/Src/stm32h7xx_hal_timebase_tim.d ./Core/Src/stm32h7xx_hal_timebase_tim.o ./Core/Src/stm32h7xx_hal_timebase_tim.su ./Core/Src/stm32h7xx_it.cyclo ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h7xx.cyclo ./Core/Src/system_stm32h7xx.d ./Core/Src/system_stm32h7xx.o ./Core/Src/system_stm32h7xx.su
+	-$(RM) ./Core/Src/GPS.cyclo ./Core/Src/GPS.d ./Core/Src/GPS.o ./Core/Src/GPS.su ./Core/Src/IMU.cyclo ./Core/Src/IMU.d ./Core/Src/IMU.o ./Core/Src/IMU.su ./Core/Src/LOG.cyclo ./Core/Src/LOG.d ./Core/Src/LOG.o ./Core/Src/LOG.su ./Core/Src/NAV.cyclo ./Core/Src/NAV.d ./Core/Src/NAV.o ./Core/Src/NAV.su ./Core/Src/SistemYapilandirici.cyclo ./Core/Src/SistemYapilandirici.d ./Core/Src/SistemYapilandirici.o ./Core/Src/SistemYapilandirici.su ./Core/Src/freertos.cyclo ./Core/Src/freertos.d ./Core/Src/freertos.o ./Core/Src/freertos.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.cyclo ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_hal_timebase_tim.cyclo ./Core/Src/stm32h7xx_hal_timebase_tim.d ./Core/Src/stm32h7xx_hal_timebase_tim.o ./Core/Src/stm32h7xx_hal_timebase_tim.su ./Core/Src/stm32h7xx_it.cyclo ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h7xx.cyclo ./Core/Src/system_stm32h7xx.d ./Core/Src/system_stm32h7xx.o ./Core/Src/system_stm32h7xx.su
 
 .PHONY: clean-Core-2f-Src
 

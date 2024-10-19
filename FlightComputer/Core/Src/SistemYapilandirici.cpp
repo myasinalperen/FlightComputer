@@ -5,7 +5,7 @@
  *      Author: m_yas
  */
 
-#define taskSize  ( ( size_t ) ( 1 * 1024 ) )  // Örneğin 1KB heap
+#define taskSize  ( ( size_t ) ( 1 * 512 ) )  // Örneğin 1KB heap
 
 
 #include <SistemYapilandirici.h>
@@ -19,6 +19,7 @@
 {
 	 //Instance();
 	islevBaslat();
+	return;
 }
 
 
@@ -49,12 +50,12 @@ void SistemYapilandirici::islevBaslat()
 
     /* definition and creation of IMUtask */
     osThreadId IMUtaskHandle;
-    osThreadDef(IMUtask, IMU::vIMUtask, osPriorityNormal, 0, taskSize);
+    osThreadDef(IMUtask, IMU::vIMUtask, osPriorityAboveNormal, 0, taskSize);
     IMUtaskHandle = osThreadCreate(osThread(IMUtask), NULL);
     // Task'ın başarıyla oluşturulup oluşturulmadığını kontrol et
     if (IMUtaskHandle == NULL)
     {
-    	// Hata yönetimi
+    	LOGu("IMUtask olusturulamadi \n");
 
     }
     else
@@ -63,39 +64,25 @@ void SistemYapilandirici::islevBaslat()
 
     }
 
-#if 0
+
 	  /* definition and creation of GPStask */
 		osThreadId GPStaskHandle;
-	  osThreadDef(GPStask, GPS::vGPStask, osPriorityNormal, 0, taskSize);
+	  osThreadDef(GPStask, GPS::vGPStask, osPriorityAboveNormal, 0, taskSize);
 	  GPStaskHandle = osThreadCreate(osThread(GPStask), NULL);
 	    // Task'ın başarıyla oluşturulup oluşturulmadığını kontrol et
 	    if (GPStaskHandle == NULL)
 	    {
-	        // Hata yönetimi
-	    	/*printf("ERROR: GPStask basariyla olusturuldu \n");*/
+	    	LOGu("GPStask olusturulamadi \n");
 	    }
 	    else
 	    {
-	    	/*printf("GPStask basariyla olusturuldu");*/
+	    	LOGu("GPStask olusturuldu \n");
 	    }
 
 
 
 
-	    /* definition and creation of GKAtask */
-	    osThreadId GKAtaskHandle;
-		osThreadDef(GKAtask, GKA::vGKAtask, osPriorityNormal, 0, taskSize);
-	    GKAtaskHandle = osThreadCreate(osThread(GKAtask), NULL);
-	    // Task'ın başarıyla oluşturulup oluşturulmadığını kontrol et
-	    if (GKAtaskHandle == NULL)
-	    {
-	    	// Hata yönetimi
-	    }
-	    else
-	    {
-
-	    }
-
+#if 0
 	    /* definition and creation of GKAtask */
 	    osThreadId NAVtaskHandle;
 	    osThreadDef(NAVtask,NAV::vNAVtask, osPriorityNormal, 0, taskSize);
@@ -103,15 +90,15 @@ void SistemYapilandirici::islevBaslat()
 	    // Task'ın başarıyla oluşturulup oluşturulmadığını kontrol et
 	    if (NAVtaskHandle == NULL)
 	    {
-	    	// Hata yönetimi
+	    	LOGu("NAVtask olusturulamadi \n");
 	    }
 	    else
 	    {
-
+	    	LOGu("NAVtask olusturuldu \n");
 	    }
 #endif
-	    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,GPIO_PIN_RESET);
 
+	    LOGu("Sistem Yapilandirici Bitti\n");
 
-
+return;
 	}

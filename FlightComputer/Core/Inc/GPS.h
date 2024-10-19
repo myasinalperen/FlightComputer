@@ -13,6 +13,8 @@
 #include "cmsis_os.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "LOG.h"
+#include <SistemYapilandirici.h>
 
 class GPS {
 public:

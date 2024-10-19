@@ -10,6 +10,8 @@
 
 #include "stm32h7xx_hal.h"
 #include "main.h"
+#include "LOG.h"
+#include <SistemYapilandirici.h>
 
 class NAV {
 public:

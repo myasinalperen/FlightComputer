@@ -14,6 +14,8 @@
 #include "task.h"
 #include "string.h"
 #include "cmsis_os.h"
+#include "LOG.h"
+#include <SistemYapilandirici.h>
 class IMU {
 public:
 	IMU();

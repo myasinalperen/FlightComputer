@@ -18,10 +18,12 @@ GPS::~GPS() {
 
  void GPS::vGPStask(void const* argument)
 {
-
+	  LOGu("GPS Task Giris\n");
     while (1) {
 
-		//HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin,GPIO_PIN_SET);
-        // Task code goes here
+
+  	  LOGu("GPS\n");
+  	osDelay(1);
+
     }
 }

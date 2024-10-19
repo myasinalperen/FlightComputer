@@ -71,7 +71,7 @@ UART_HandleTypeDef huart2;
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
 osThreadId defaultTaskHandle;
-
+osMutexId LogMutexHandle;
 osSemaphoreId BinSemHandle;
 /* USER CODE BEGIN PV */
 
@@ -140,6 +140,9 @@ int main(void)
   osSemaphoreDef(BinSem);
   BinSemHandle = osSemaphoreCreate(osSemaphore(BinSem), 1);
 
+  osMutexDef(LogMutex);
+  LogMutexHandle = osMutexCreate(osMutex(LogMutex));
+
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
   /* USER CODE END RTOS_SEMAPHORES */
@@ -154,7 +157,7 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 1024);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityAboveNormal, 0, 1024);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
 
@@ -304,7 +307,7 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART3_Init 1 */
 	  huart2.Instance = USART2;
-	  huart2.Init.BaudRate = 9600;
+	  huart2.Init.BaudRate = 115200;
 	  huart2.Init.WordLength = UART_WORDLENGTH_8B;
 	  huart2.Init.StopBits = UART_STOPBITS_1;
 	  huart2.Init.Parity = UART_PARITY_NONE;
@@ -496,9 +499,8 @@ void StartDefaultTask(void const * argument)
 	LOGu("Sistem Yapilandirici Basliyor\n");
 	SistemYapilandirici *p_SistemYapilandirici = new SistemYapilandirici();
 
-
-
-  /* USER CODE END 5 */
+	return;
+ /* USER CODE END 5 */
 }
 
 
