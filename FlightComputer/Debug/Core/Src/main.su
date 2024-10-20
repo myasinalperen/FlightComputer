@@ -1,9 +1,10 @@
-../Core/Src/main.cpp:102:5:int main()	64	static
-../Core/Src/main.cpp:189:6:void SystemClock_Config()	120	static
-../Core/Src/main.cpp:250:13:void MX_ETH_Init()	8	static
-../Core/Src/main.cpp:299:13:void MX_USART2_UART_Init()	8	static
-../Core/Src/main.cpp:348:13:void MX_USB_OTG_FS_PCD_Init()	8	static
-../Core/Src/main.cpp:384:13:void MX_GPIO_Init()	56	static
-../Core/Src/main.cpp:492:6:void StartDefaultTask(const void*)	32	static
-../Core/Src/main.cpp:516:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	16	static
-../Core/Src/main.cpp:533:6:void Error_Handler()	4	static,ignoring_inline_asm
+../Core/Src/main.cpp:106:5:int main()	64	static
+../Core/Src/main.cpp:193:6:void SystemClock_Config()	120	static
+../Core/Src/main.cpp:254:13:void MX_ETH_Init()	8	static
+../Core/Src/main.cpp:303:13:void MX_USART2_UART_Init()	8	static
+../Core/Src/main.cpp:352:13:void MX_USB_OTG_FS_PCD_Init()	8	static
+../Core/Src/main.cpp:388:13:void MX_I2C1_Init()	8	static
+../Core/Src/main.cpp:436:13:void MX_GPIO_Init()	56	static
+../Core/Src/main.cpp:544:6:void StartDefaultTask(const void*)	32	static
+../Core/Src/main.cpp:569:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	16	static
+../Core/Src/main.cpp:586:6:void Error_Handler()	4	static,ignoring_inline_asm

@@ -18,8 +18,12 @@
  SistemYapilandirici::SistemYapilandirici()
 {
 	 //Instance();
-	islevBaslat();
-	return;
+	 if(!SistemYapilandiriciBaslatildi)
+	 {
+    	islevBaslat();
+    	return;
+	 }
+
 }
 
 
@@ -99,6 +103,7 @@ void SistemYapilandirici::islevBaslat()
 #endif
 
 	    LOGu("Sistem Yapilandirici Bitti\n");
+	    SistemYapilandiriciBaslatildi=true;
 
 return;
 	}

@@ -1,32 +1,17 @@
-23:25:26 **** Incremental Build of configuration Debug for project FlightComputer ****
+14:23:03 **** Incremental Build of configuration Debug for project FlightComputer ****
 make -j12 all 
-arm-none-eabi-g++ "../Core/Src/SistemYapilandirici.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/SistemYapilandirici.d" -MT"Core/Src/SistemYapilandirici.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/SistemYapilandirici.o"
-In file included from ../Core/Inc/SistemYapilandirici.h:13,
-                 from ../Core/Src/SistemYapilandirici.cpp:11:
-../Core/Src/SistemYapilandirici.cpp: In member function 'void SistemYapilandirici::islevBaslat()':
-../Core/Src/SistemYapilandirici.cpp:53:75: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-   53 |     osThreadDef(IMUtask, IMU::vIMUtask, osPriorityAboveNormal, 0, taskSize);
-      |                                                                           ^
-../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
-  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
-      |    ^~~~
-../Core/Src/SistemYapilandirici.cpp:70:81: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-   70 |           osThreadDef(GPStask, GPS::vGPStask, osPriorityAboveNormal, 0, taskSize);
-      |                                                                                 ^
-../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
-  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
-      |    ^~~~
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
 arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: FlightComputer.elf
  
 arm-none-eabi-size  FlightComputer.elf 
 arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
    text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
+  48504	    436	  20092	  69032	  10da8	FlightComputer.elf
 Finished building: default.size.stdout
  
 Finished building: FlightComputer.list
  
 
-23:25:27 Build Finished. 0 errors, 2 warnings. (took 1s.361ms)
+14:23:04 Build Finished. 0 errors, 0 warnings. (took 1s.311ms)
 

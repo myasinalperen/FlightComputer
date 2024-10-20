@@ -1,4 +1,4 @@
-../Core/Src/SistemYapilandirici.cpp:18:2:SistemYapilandirici::SistemYapilandirici()	1
-../Core/Src/SistemYapilandirici.cpp:30:2:SistemYapilandirici::~SistemYapilandirici()	1
-../Core/Src/SistemYapilandirici.cpp:37:6:void SistemYapilandirici::Instance()	1
-../Core/Src/SistemYapilandirici.cpp:47:6:void SistemYapilandirici::islevBaslat()	3
+../Core/Src/SistemYapilandirici.cpp:18:2:SistemYapilandirici::SistemYapilandirici()	2
+../Core/Src/SistemYapilandirici.cpp:34:2:SistemYapilandirici::~SistemYapilandirici()	1
+../Core/Src/SistemYapilandirici.cpp:41:6:void SistemYapilandirici::Instance()	1
+../Core/Src/SistemYapilandirici.cpp:51:6:void SistemYapilandirici::islevBaslat()	3

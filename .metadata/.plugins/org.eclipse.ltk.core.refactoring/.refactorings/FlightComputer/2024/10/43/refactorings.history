@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FlightComputer/Core/Src/KalmanMPU6050.c&apos; to &apos;KalmanMPU6050.cpp&apos;" description="Rename resource &apos;KalmanMPU6050.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/KalmanMPU6050.c" name="KalmanMPU6050.cpp" stamp="1729418312348" updateReferences="true"/>
+</session>

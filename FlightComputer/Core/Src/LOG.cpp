@@ -12,13 +12,14 @@
 #include "main.h"
 #include "stm32h7xx_hal.h"
 #include "FreeRTOS.h"
+#include <stdarg.h>
 extern UART_HandleTypeDef huart2;
 extern osMutexId LogMutexHandle;
 
 
 void LOGu(const char *format, ...)
 {
-    char message[200]; // Mesajı tutacak bir dizi
+    char message[300]; // Mesajı tutacak bir dizi
     va_list args; // Değişken argümanlar için
     va_start(args, format); // Argüman listesini başlat
 
@@ -40,5 +41,4 @@ void LOGu(const char *format, ...)
         osMutexRelease(LogMutexHandle);
     }
 }
-
 

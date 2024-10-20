@@ -22,7 +22,7 @@ GPS::~GPS() {
     while (1) {
 
 
-  	  LOGu("GPS\n");
+  	 // LOGu("GPS\n");
   	osDelay(1);
 
     }

@@ -1,4 +1,207 @@
-23:21:47 **** Incremental Build of configuration Debug for project FlightComputer ****
+13:41:20 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48400	    436	  20092	  68928	  10d40	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+13:52:55 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-size  FlightComputer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48400	    436	  20092	  68928	  10d40	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+13:54:35 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48400	    436	  20092	  68928	  10d40	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+13:57:22 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-size  FlightComputer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48400	    436	  20092	  68928	  10d40	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+13:58:26 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-size  FlightComputer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48400	    436	  20092	  68928	  10d40	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+14:00:49 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48488	    436	  20092	  69016	  10d98	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:01:27 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-size  FlightComputer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48488	    436	  20092	  69016	  10d98	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+14:03:07 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-size  FlightComputer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48488	    436	  20092	  69016	  10d98	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+14:04:01 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-size  FlightComputer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48488	    436	  20092	  69016	  10d98	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+14:04:46 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+../Core/Src/IMU.cpp: In static member function 'static void IMU::vIMUtask(const void*)':
+../Core/Src/IMU.cpp:71:26: warning: unused variable 'pitch' [-Wunused-variable]
+   71 |                   double pitch =MPU6050.KalmanAngleY;
+      |                          ^~~~~
+../Core/Src/IMU.cpp:72:26: warning: unused variable 'roll' [-Wunused-variable]
+   72 |                   double roll =MPU6050.KalmanAngleX;
+      |                          ^~~~
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48440	    436	  20092	  68968	  10d68	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:05:17 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/GPS.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/GPS.d" -MT"Core/Src/GPS.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GPS.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48416	    436	  20092	  68944	  10d50	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:06:17 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+../Core/Src/IMU.cpp: In static member function 'static void IMU::vIMUtask(const void*)':
+../Core/Src/IMU.cpp:71:26: warning: unused variable 'pitch' [-Wunused-variable]
+   71 |                   double pitch =MPU6050.KalmanAngleY;
+      |                          ^~~~~
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48464	    436	  20092	  68992	  10d80	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:09:11 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48488	    436	  20092	  69016	  10d98	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:12:58 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+../Core/Src/IMU.cpp: In static member function 'static void IMU::vIMUtask(const void*)':
+../Core/Src/IMU.cpp:71:26: warning: unused variable 'pitch' [-Wunused-variable]
+   71 |                   double pitch =MPU6050.KalmanAngleY;
+      |                          ^~~~~
+../Core/Src/IMU.cpp:72:26: warning: unused variable 'roll' [-Wunused-variable]
+   72 |                   double roll =MPU6050.KalmanAngleX;
+      |                          ^~~~
+../Core/Src/IMU.cpp:73:26: warning: unused variable 'X' [-Wunused-variable]
+   73 |                   double X=0;
+      |                          ^
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48456	    436	  20092	  68984	  10d78	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:13:47 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48488	    436	  20092	  69016	  10d98	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:14:22 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48488	    436	  20092	  69016	  10d98	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:15:35 **** Incremental Build of configuration Debug for project FlightComputer ****
 make -j12 all 
 arm-none-eabi-g++ "../Core/Src/LOG.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LOG.d" -MT"Core/Src/LOG.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/LOG.o"
 arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -7,56 +210,28 @@ Finished building target: FlightComputer.elf
 arm-none-eabi-size  FlightComputer.elf 
 arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
    text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
+  48504	    436	  20092	  69032	  10da8	FlightComputer.elf
 Finished building: default.size.stdout
  
 Finished building: FlightComputer.list
  
-23:22:18 **** Incremental Build of configuration Debug for project FlightComputer ****
+14:15:57 **** Incremental Build of configuration Debug for project FlightComputer ****
 make -j12 all 
-arm-none-eabi-size  FlightComputer.elf 
-   text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
-Finished building: default.size.stdout
- 
-23:22:45 **** Incremental Build of configuration Debug for project FlightComputer ****
-make -j12 all 
-arm-none-eabi-g++ "../Core/Src/SistemYapilandirici.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/SistemYapilandirici.d" -MT"Core/Src/SistemYapilandirici.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/SistemYapilandirici.o"
-In file included from ../Core/Inc/SistemYapilandirici.h:13,
-                 from ../Core/Src/SistemYapilandirici.cpp:11:
-../Core/Src/SistemYapilandirici.cpp: In member function 'void SistemYapilandirici::islevBaslat()':
-../Core/Src/SistemYapilandirici.cpp:53:75: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-   53 |     osThreadDef(IMUtask, IMU::vIMUtask, osPriorityAboveNormal, 0, taskSize);
-      |                                                                           ^
-../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
-  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
-      |    ^~~~
-../Core/Src/SistemYapilandirici.cpp:70:73: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-   70 |           osThreadDef(GPStask, GPS::vGPStask, osPriorityLow, 0, taskSize);
-      |                                                                         ^
-../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
-  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
-      |    ^~~~
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
 arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: FlightComputer.elf
  
 arm-none-eabi-size  FlightComputer.elf 
 arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
    text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
+  48504	    436	  20092	  69032	  10da8	FlightComputer.elf
 Finished building: default.size.stdout
  
 Finished building: FlightComputer.list
  
-23:23:25 **** Incremental Build of configuration Debug for project FlightComputer ****
+14:18:12 **** Incremental Build of configuration Debug for project FlightComputer ****
 make -j12 all 
-arm-none-eabi-size  FlightComputer.elf 
-   text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
-Finished building: default.size.stdout
- 
-23:24:17 **** Incremental Build of configuration Debug for project FlightComputer ****
-make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
 arm-none-eabi-g++ "../Core/Src/LOG.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LOG.d" -MT"Core/Src/LOG.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/LOG.o"
 arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: FlightComputer.elf
@@ -64,43 +239,78 @@ Finished building target: FlightComputer.elf
 arm-none-eabi-size  FlightComputer.elf 
 arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
    text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
+  48504	    436	  20092	  69032	  10da8	FlightComputer.elf
 Finished building: default.size.stdout
  
 Finished building: FlightComputer.list
  
-23:24:40 **** Incremental Build of configuration Debug for project FlightComputer ****
+14:18:45 **** Incremental Build of configuration Debug for project FlightComputer ****
 make -j12 all 
-arm-none-eabi-size  FlightComputer.elf 
-   text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
-Finished building: default.size.stdout
- 
-23:25:26 **** Incremental Build of configuration Debug for project FlightComputer ****
-make -j12 all 
-arm-none-eabi-g++ "../Core/Src/SistemYapilandirici.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/SistemYapilandirici.d" -MT"Core/Src/SistemYapilandirici.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/SistemYapilandirici.o"
-In file included from ../Core/Inc/SistemYapilandirici.h:13,
-                 from ../Core/Src/SistemYapilandirici.cpp:11:
-../Core/Src/SistemYapilandirici.cpp: In member function 'void SistemYapilandirici::islevBaslat()':
-../Core/Src/SistemYapilandirici.cpp:53:75: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-   53 |     osThreadDef(IMUtask, IMU::vIMUtask, osPriorityAboveNormal, 0, taskSize);
-      |                                                                           ^
-../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
-  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
-      |    ^~~~
-../Core/Src/SistemYapilandirici.cpp:70:81: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-   70 |           osThreadDef(GPStask, GPS::vGPStask, osPriorityAboveNormal, 0, taskSize);
-      |                                                                                 ^
-../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:416:4: note: in definition of macro 'osThreadDef'
-  416 | { #name, (thread), (priority), (instances), (stacksz), NULL, NULL }
-      |    ^~~~
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
 arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: FlightComputer.elf
  
 arm-none-eabi-size  FlightComputer.elf 
 arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
    text	   data	    bss	    dec	    hex	filename
-  42864	    292	  20004	  63160	   f6b8	FlightComputer.elf
+  48504	    436	  20092	  69032	  10da8	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:20:52 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/LOG.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LOG.d" -MT"Core/Src/LOG.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/LOG.o"
+../Core/Src/LOG.cpp: In function 'void LOGu(const char*, ...)':
+../Core/Src/LOG.cpp:56:30: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+   56 |     if (length < 0 || length >= sizeof(message)) {
+      |                       ~~~~~~~^~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48696	    436	  20092	  69224	  10e68	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:22:09 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ "../Core/Src/LOG.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LOG.d" -MT"Core/Src/LOG.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/LOG.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48504	    436	  20092	  69032	  10da8	FlightComputer.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlightComputer.list
+ 
+14:22:53 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+../Core/Src/IMU.cpp: In static member function 'static void IMU::vIMUtask(const void*)':
+../Core/Src/IMU.cpp:75:52: error: 'uin32_t' was not declared in this scope; did you mean 'uint32_t'?
+   75 |                 LOGu("Pitch:%d Roll:%.2f X:%f \n",(uin32_t)(pitch),roll,X);
+      |                                                    ^~~~~~~
+      |                                                    uint32_t
+make: *** [Core/Src/subdir.mk:59: Core/Src/IMU.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:23:03 **** Incremental Build of configuration Debug for project FlightComputer ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/IMU.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+arm-none-eabi-g++ -o "FlightComputer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\m_yas\STM32CubeIDE\FlightComputer\FlightComputer\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlightComputer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: FlightComputer.elf
+ 
+arm-none-eabi-size  FlightComputer.elf 
+arm-none-eabi-objdump -h -S FlightComputer.elf  > "FlightComputer.list"
+   text	   data	    bss	    dec	    hex	filename
+  48504	    436	  20092	  69032	  10da8	FlightComputer.elf
 Finished building: default.size.stdout
  
 Finished building: FlightComputer.list

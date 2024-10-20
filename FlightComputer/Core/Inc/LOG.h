@@ -14,6 +14,6 @@
 
 
 
-	void LOGu(const char *format, ...);
+void LOGu(const char *format, ...);
 
 #endif /* SRC_LOG_H_ */

@@ -28,7 +28,7 @@ public:
 ~SistemYapilandirici();
 
 private:
-
+bool SistemYapilandiriciBaslatildi=false;
 void islevBaslat();
 void Instance();
 
